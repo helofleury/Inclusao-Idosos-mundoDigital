@@ -1,0 +1,190 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: rgb(64, 64, 148);
+    padding: -30px 0;
+    opacity: 0.9;
+    
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: justify;
+    word-spacing: -5px;
+}
+
+.menu li{
+    display: inline;
+    position: relative; 
+    margin-right: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Estilo para o menu dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(108, 39, 148);
+    /*min-width: 160px;*/
+    box-shadow: 0px 8px 16px 0px white;
+    top: 105%; /* Coloca o submenu abaixo do item pai */
+    left: 14%;
+    
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+/* Estilo para os links no menu dropdown */
+.dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(79, 6, 163);
+}
+.caixa{
+    position: relative;
+    width: 940px;
+}
+
+.logo{
+    width:177px;
+    cursor: pointer;
+    margin: 20px 0 20px 65px;
+}
+
+nav{
+    position: absolute;
+    top: 106px;
+    right: -260px;
+    font-family: 'Roboto Slab', serif;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    margin-right: 20px;
+    
+    
+}
+   
+nav a{
+       text-transform: uppercase;
+       color: white;
+       text-decoration: none;
+       font-weight: bold;
+       font-size: 22px;
+       position: relative;
+       
+}
+
+nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, gray, #ffffff);
+    position: absolute;
+    top: 28px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+nav a:hover::after{
+    width: 50px;
+}
+nav a:hover{
+    color: white;
+    
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+    font-weight: bold;
+    color: darkslategray;
+}
+h2{
+    
+    margin-left: 120px;
+    font-size: 20px;
+    margin-top: -300px;
+    line-height: 1.1;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+p{
+    margin-top: 80px;
+    text-align: left;
+    margin: 1em 8em -5em -6em;
+    text-align: justify;
+    line-height: 1.8;
+    /*flex: 1;*/
+    text-indent: 1em;
+}
+.importanciasd{
+    background-color: rgb(154, 169, 255);
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+.img{
+    max-width: 80%;
+    margin-left: 20px;
+    
+}
+.imagem60{
+    width: 500px;
+    height: 80vh;
+    
+}
+
+@keyframes blink {
+   
+    50% {
+        transform: translateY(-6%);
+    
+    }
+}
+
+.imagem60 {
+    animation: blink 1.4s infinite ease-in-out;
+    margin-right: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(98, 98, 172);
+    padding: 40px 0px 20px;
+    margin: 50px 0 0px;
+    
+}
+.logo-rodape{
+    width: 150px;
+}
+
+.copy{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0;
+    text-align: center;
+}
